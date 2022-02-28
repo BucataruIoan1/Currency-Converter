@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>Exchange</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link rounded-pill" style="color:#00B4D8;" href="index.html">Currency</a>
+            <a class="nav-item nav-link rounded-pill" style="color:#00B4D8;" href="exchange.html">Exchange</a>
+            <a class="nav-item nav-link rounded-pill" style="color:#00B4D8;" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="converter">
+
+          <div class="currencyConverter">
+
+            <h3>Currency Converter</h3>
+
+            <div class="amount">
+
+              <label class="enterValueText" for="AmountValue">Enter Amount</label>
+              <input type="email" class="form-control" id="amountValue" placeholder="">
+
+            <div class="exchangeConverter">
+
+              <div class="from">
+
+                <p>From:</p>
+
+                <div class="flagCurrency rounded">
+
+                  <img class="flag flagFirst" src="images/RON.png" alt="">
+
+                  <select name="currency" id="currencyTypeFirst">
+
+                    <option class="ron" value="romanian-ron">RON</option>
+                    <option class="dollar" value="dollar">USD</option>
+                    <option class="euro" value="euro">EUR</option>
+                    <option class="pound" value="pound-sterling">GBP</option>
+                    <option class="franc" value="swiss-franc">CHF</option>
+                    <option class="canadian" value="canadian-dollar">CAD</option>
+                    <option class="yen" value="japanese-yen">JPY</option>
+                    <option class="yuan" value="chinese-yuan">CNY</option>
+                    <option class="rupee" value="indian-rupee">INR</option>
+                    <option class="rouble" value="russian-rouble">RUB</option>
+                    <option class="lev" value="bulgarian-lev">BGN</option>
+                    <option class="koruna" value="czech-koruna">CZK</option>
+                    <option class="forint" value="hungarian-forint">HUF</option>
+                    <option class="zloty" value="polish-zloty">PLN</option>
+
+                  </select>
+
+                </div>
+
+              </div>
+
+              <img class="reverse" src="https://www.svgrepo.com/show/253436/reverse.svg" alt="">
+
+              <div class="from">
+
+                <p>To:</p>
+
+                <div class="flagCurrency rounded">
+
+                  <img class="flag flagSecond" src="images/EUR.png" alt="">
+
+                  <select name="currency" id="currencyTypeSecond">
+                
+                    <option value="euro">EUR</option>
+                    <option value="romanian-ron">RON</option>
+                    <option value="dollar">USD</option>                  
+                    <option value="pound-sterling">GBP</option>
+                    <option value="swiss-franc">CHF</option>
+                    <option value="canadian-dollar">CAD</option>
+                    <option value="japanese-yen">JPY</option>
+                    <option value="chinese-yuan">CNY</option>
+                    <option value="indian-rupee">INR</option>
+                    <option value="russian-rouble">RUB</option>
+                    <option value="bulgarian-lev">BGN</option>
+                    <option value="czech-koruna">CZK</option>
+                    <option value="hungarian-forint">HUF</option>
+                    <option value="polish-zloty">PLN</option>
+
+                  </select>
+
+                </div>
+
+              </div>
+              
+            </div>
+
+            <div class="resultExchange">
+
+              <p></p>            
+
+            </div>
+
+            <div class="buttonExchange">
+
+              <button type="button" class="btn btn-lg exchangeBtn">Get Exchange Rate</button>
+
+            </div>
+
+            </div>
+
+          </div>
+
+      </section>
+
+      <section id="footer">
+
+        <div class="icon">
+            <i class="fab fa-twitter fa-3x"></i>
+            <i class="fab fa-facebook-f fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fas fa-envelope fa-3x"></i>
+        </div>
+  
+        <div class="copyright">
+          <p>© Copyright 2022 Currency</p>
+        </div>      
+      </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

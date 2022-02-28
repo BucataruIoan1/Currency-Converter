@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CAF0F8;
+}
+
+/****************************************NAVBAR SECTION STYLE *******************/
+
+.nav-item {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item:hover {
+    background-color: #90E0EF;
+}
+
+/****************************************Currency Table SECTION STYLE ****************/
+
+#currency {
+    height: 150vh;
+    background-color: #03045E;
+}
+
+.titleDesc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 3%;   
+}
+
+.titleDesc h3 {
+    font-size: 34px;
+}
+
+.titleDesc p {
+    font-size: 20px;
+}
+
+.titleDesc hr {
+    background-color: #fff200;
+    border-width: 5px;
+    opacity: 1;
+    width: 80px;
+}
+
+.currencyTable {
+    background-color: #fff;
+    margin: 1% 3% 0;
+}
+
+.descTable {
+    color: #03045E;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.descTable:hover {
+    color: #00B4D8;
+}
+
+.dataTable {
+    color: #00B4D8;
+    text-decoration: none;
+    font-size: 1.5rem;    
+}
+
+.flag, .chart {
+    width: 40px;
+    height: 100%;
+}
+
+.arrowGreen, .arrowRed {
+    color: #15bf13;
+    height: 100%;
+}
+
+.arrowRed {
+    color: #ce363c;
+}
+/****************************************FOOTER SECTION STYLE ***********************/
+
+#footer {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon i {
+    margin: 10px;
+}
+
+.copyright p {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #00B4D8;
+}
+
+/*************************************EXCHANGE PAGE STYLE *********************************/
+
+#converter {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5%;
+}
+
+#converter h3 {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.currencyConverter {
+    background-color: #fff;
+    height: 60vh;
+    width: 30%;
+}
+
+.amount {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.enterValueText {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.exchangeConverter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 3%;
+}
+
+.flagCurrency {
+    border: 1px solid #ced4da;
+}
+
+#currencyType {
+    border: 0;
+    text-align: center;
+}
+
+.reverse {
+    width: 13%;
+    height: 13%;
+}
+
+.resultExchange {
+    padding-top: 5%;
+}
+
+.buttonExchange {
+    text-align: center;
+}
+
+.exchangeBtn {
+    width: 75%;
+    color: #fff;
+    background-color: #00B4D8;
+}
+
+.exchangeBtn:hover {
+    background-color: #90E0EF;
+    color: #fff;
+}
