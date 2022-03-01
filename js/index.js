@@ -1,6 +1,38 @@
 let inputElement = document.querySelector('#amountValue');
 let resultFirstElement = document.querySelector('.resultExchange p');
 
+// Define the value of currency
+
+let ronValue = $(".ron");
+ronValue = 1;
+let dollarValue = $(".dollar");
+dollarValue = 4.4218;
+let euroValue = $(".euro");
+euroValue = 4.9480;
+let poundValue = $(".pound");
+poundValue = 5.9187;
+let francValue = $(".franc");
+francValue = 4.7957;
+let canadianValue = $(".canadian");
+canadianValue = 3.4677;
+let yenValue = $(".yen");
+yenValue = 0.0386;
+let yuanValue = $(".yuan");
+yuanValue = 0.7011;
+let rupeeValue = $(".rupee");
+rupeeValue = 0.0587;
+let roubleValue = $(".rouble");
+roubleValue = 0.045;
+let levValue = $(".lev");
+levValue = 2.5298;
+let korunaValue = $(".koruna");
+korunaValue = 0.1981;
+let forintValue = $(".forint");
+forintValue = 0.0135;
+let zlotyValue = $(".zloty");
+zlotyValue = 1.0562;
+
+
 // Introduce a value and clear Amount Value Input
 
 document.querySelector(".exchangeBtn").addEventListener("click", function() {
@@ -45,48 +77,67 @@ function checkNumberInput() {
 
     if(isNaN(checkNumber) !== true && checkNumber > 0) {
 
-        if (document.querySelector(".ron").selected === true) {
-        resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".ron").innerHTML;
+        calculateCurrency(".ron", ronValue);
+        calculateCurrency(".dollar", dollarValue);
+        calculateCurrency(".euro", euroValue);
+        calculateCurrency(".pound", poundValue);
+        calculateCurrency(".franc", francValue);
+        calculateCurrency(".canadian", canadianValue);
+        calculateCurrency(".yen", yenValue);
+        calculateCurrency(".yuan", yuanValue);
+        calculateCurrency(".rupee", rupeeValue);
+        calculateCurrency(".rouble", roubleValue);
+        calculateCurrency(".lev", levValue);
+        calculateCurrency(".koruna", korunaValue);
+        calculateCurrency(".forint", forintValue);
+        calculateCurrency(".zloty", zlotyValue);
+
+        function calculateCurrency(currency, currencyValue) {
+
+        if ($(currency)[0].selected === true && $(".euro")[1].selected === true) {
+        resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / euroValue) * currencyValue) +  ' ' + $(".euro")[0].innerHTML;
         }
-        else if (document.querySelector(".dollar").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".dollar").innerHTML;
+        else if ($(currency)[0].selected === true && $(".ron")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / ronValue) * currencyValue) +  ' ' + $(".ron")[0].innerHTML;
         }
-        else if (document.querySelector(".euro").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".euro").innerHTML;
+        else if ($(currency)[0].selected === true && $(".dollar")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / dollarValue) * currencyValue) +  ' ' + $(".dollar")[0].innerHTML;
         }
-        else if (document.querySelector(".pound").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".pound").innerHTML;
+        else if ($(currency)[0].selected === true && $(".pound")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / poundValue) * currencyValue) +  ' ' + $(".pound")[0].innerHTML;
         }
-        else if (document.querySelector(".franc").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".franc").innerHTML;
+        else if ($(currency)[0].selected === true && $(".franc")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / francValue) * currencyValue) +  ' ' + $(".franc")[0].innerHTML;
         }
-        else if (document.querySelector(".canadian").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".canadian").innerHTML;
+        else if ($(currency)[0].selected === true && $(".canadian")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / canadianValue) * currencyValue) +  ' ' + $(".canadian")[0].innerHTML;
         }
-        else if (document.querySelector(".yen").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".yen").innerHTML;
+        else if ($(currency)[0].selected === true && $(".yen")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / yenValue) * currencyValue) +  ' ' + $(".yen")[0].innerHTML;
         }
-        else if (document.querySelector(".yuan").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".yuan").innerHTML;
+        else if ($(currency)[0].selected === true && $(".yuan")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / yuanValue) * currencyValue) +  ' ' + $(".yuan")[0].innerHTML;
         }
-        else if (document.querySelector(".rupee").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".rupee").innerHTML;
+        else if ($(currency)[0].selected === true && $(".rupee")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / rupeeValue) * currencyValue) +  ' ' + $(".rupee")[0].innerHTML;
         }
-        else if (document.querySelector(".rouble").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".rouble").innerHTML;
+        else if ($(currency)[0].selected === true && $(".rouble")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / roubleValue) * currencyValue) +  ' ' + $(".rouble")[0].innerHTML;
         }
-        else if (document.querySelector(".lev").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".lev").innerHTML;
+        else if ($(currency)[0].selected === true && $(".lev")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / levValue) * currencyValue) +  ' ' + $(".lev")[0].innerHTML;
         }
-        else if (document.querySelector(".koruna").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".koruna").innerHTML;
+        else if ($(currency)[0].selected === true && $(".koruna")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / korunaValue) * currencyValue) +  ' ' + $(".koruna")[0].innerHTML;
         }
-        else if (document.querySelector(".forint").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".forint").innerHTML;
+        else if ($(currency)[0].selected === true && $(".forint")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / forintValue) * currencyValue) +  ' ' + $(".forint")[0].innerHTML;
         }
-        else if (document.querySelector(".zloty").selected === true) {
-            resultFirstElement.innerHTML = inputElement.value + ' ' + document.querySelector(".zloty").innerHTML;
+        else if ($(currency)[0].selected === true && $(".zloty")[1].selected === true) {
+            resultFirstElement.innerHTML = inputElement.value + ' ' + $(currency)[0].innerHTML + ' = ' + ((inputElement.value / zlotyValue) * currencyValue) +  ' ' + $(".zloty")[0].innerHTML;
         }
+
+    }
 
     } else {
         inputElement.value = '';
@@ -96,7 +147,6 @@ function checkNumberInput() {
     inputElement.value = '';
     
 }
-
 
 function showFlag(optionElement, flag, index0, index1, index2) {
 
