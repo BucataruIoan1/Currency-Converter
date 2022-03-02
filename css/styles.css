@@ -151,13 +151,24 @@ body {
     text-align: center;
 }
 
-.reverse {
-    width: 13%;
-    height: 13%;
+.reverseButton {
+    color: #00B4D8;
+    width: 20%;
 }
+
+.reverseButton:hover {
+    background-color: #90E0EF;
+    color: #fff;
+}
+
 
 .resultExchange {
     padding-top: 5%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #212529;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .buttonExchange {
