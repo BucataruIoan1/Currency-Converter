@@ -182,6 +182,40 @@ body {
 }
 
 .exchangeBtn:hover {
-    background-color: #90E0EF;
+    background-color: #26c4e4;
     color: #fff;
+}
+
+/***********************************CONTACT PAGE STYLE****************************/
+
+#mainContact {
+    display: flex;
+    justify-content: center;
+    padding: 6% 0 6% 0;
+}
+
+#contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameContainer, .emailContainer {
+    width: 100%;
+}
+
+#contact h1 {
+    margin-bottom: 5%;
+}
+
+.form-control {
+    margin-bottom: 1%;
+}
+
+#contact .exchangeBtn {
+    width: 40%;
+    padding: 2% 0 2% 0;
+    margin-top: 2%;
 }
