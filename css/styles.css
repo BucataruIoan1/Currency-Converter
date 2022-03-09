@@ -222,9 +222,9 @@ body {
 
 /********************************MEDIA QUERY STYLE index.html PAGE ***********************/
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     #currency {
-        height: 175vh;
+        height: 160vh;
     }
 
     .titleDesc p {
@@ -259,13 +259,13 @@ body {
 
     .dataTable {
         font-size: 1rem;
-        text-align: center;
     }
 
     .valueContent1 {
         width: 50%;
         display: flex;
         align-items: center;
+        padding: 0 5% 0 5%;
     }
 
     .heightExtraSmall {
@@ -282,5 +282,76 @@ body {
     }
 
 }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        #currency {
+            height: 150vh;
+        }
+    
+        .titleDesc p {
+            text-align: center;
+        } 
+
+        .smallDeviceCurrency {
+            width: 50%;
+        }
+    
+        .smallDeviceSpot {
+            width: 30%;
+        }
+
+        .smallDeviceChart {
+            width: 20%;
+        }
+
+        .valueContent {
+            width: 25%;
+            display: flex;
+            align-items: center;
+        }
+    
+        .arrowGreen, .arrowRed {
+            height: 50%;
+        }
+    
+        .flag {
+            height: 75%;
+        }
+
+        .dataTable {
+            font-size: 1.3rem;
+        }
+    
+        .valueContent1, .valueContent2 {
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+
+        .valueContent2 {
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+    
+        .heightExtraSmall {
+            height: 60px;
+        }
+
+        .chart {
+            width: 50%;
+            height: 100%;
+        }
+    
+        .copyright p {
+            text-align: center;
+        }
+    
+        .icon i {
+            padding-top: 10%;
+            font-size: 1.5rem;
+        } 
+
+ } 
 
 /* FOR DIMENSION LARGER THAN 992 PX ADD PS-4 (BOOTSTRAT) */
