@@ -1,0 +1,33 @@
+let countryCode = {
+    "RON" : "RO",
+    "USD" : "US",
+    "EUR" : "ER",
+    "GBP" : "GB",
+    "CHF" : "SW",
+    "CAD" : "CA",
+    "JPY" : "JP",
+    "CNY" : "CN",
+    "INR" : "IN",
+    "RUB" : "RU",
+    "BGN" : "BG",
+    "CZK" : "CZ",
+    "HUF" : "HU",
+    "PLN" : "PL",
+}
+
+let exchangeValues = {
+    RON : 1,
+    USD : 4.4218,
+    EUR : 4.9480,
+    GBP : 5.9187,
+    CHF : 4.7957,
+    CAD : 3.4677,
+    JPY : 0.0386,
+    CNY : 0.7011,
+    INR : 0.0587,
+    RUB : 0.0480,
+    BGN : 2.5298,
+    CZK : 0.1981,
+    HUF : 0.0135,
+    PLN : 1.0562,
+}
