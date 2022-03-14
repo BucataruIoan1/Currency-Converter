@@ -20,8 +20,10 @@ messageBtnElement.addEventListener("click", function() {
 
         let spanNameElement = document.createElement('span');
         spanNameElement.innerHTML = 'Please introduce your full name';
+        spanNameElement.classList.add("redText");
         let spanEmailElement = document.createElement('span');
-        spanEmailElement.innerHTML = 'Please introduce your email address';
+        spanEmailElement.innerHTML = 'Please introduce a valid address';
+        spanEmailElement.classList.add("redText");
         nameContainerElement.appendChild(spanNameElement);
         emailContainerElement.appendChild(spanEmailElement);
 
@@ -33,7 +35,8 @@ messageBtnElement.addEventListener("click", function() {
     else if (!name.match(regexName) && email.match(regexEmail)) {
 
         let spanNameElement = document.createElement('span');
-        spanNameElement.innerHTML = 'Please introduce your name';
+        spanNameElement.innerHTML = 'Please introduce your full name';
+        spanNameElement.classList.add("redText");
         nameContainerElement.appendChild(spanNameElement);
         messageBtnElement.addEventListener("click", function() {
             spanNameElement.remove();
@@ -42,7 +45,8 @@ messageBtnElement.addEventListener("click", function() {
     else if (name.match(regexName) && !email.match(regexEmail)) {
 
         let spanEmailElement = document.createElement('span');
-        spanEmailElement.innerHTML = 'Please introduce your email address';
+        spanEmailElement.innerHTML = 'Please introduce a valid address';
+        spanEmailElement.classList.add("redText");
         emailContainerElement.appendChild(spanEmailElement);
         messageBtnElement.addEventListener("click", function() {
             spanEmailElement.remove();
