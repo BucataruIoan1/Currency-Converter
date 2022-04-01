@@ -14,20 +14,3 @@ let countryCode = {
     "HUF" : "HU",
     "PLN" : "PL",
 }
-
-let exchangeValues = {
-    RON : 1,
-    USD : 4.5076,
-    EUR : 4.9489,
-    GBP : 5.8968,
-    CHF : 4.8445,
-    CAD : 3.5305,
-    JPY : 0.0385,
-    CNY : 0.7114,
-    INR : 0.0589,
-    RUB : 0.0374,
-    BGN : 2.5303,
-    CZK : 0.1964,
-    HUF : 0.0130,
-    PLN : 1.0320,
-}
